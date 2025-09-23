@@ -1,6 +1,6 @@
 // @/app/Painel/index.tsx
 import Background from "@/components/Background";
-import Header from "@/components/Background/Header";
+import Header from "@/components/Header";
 import Search from "@/components/Search";
 import { useLocalSearchParams, useRouter } from "expo-router"; // importando estado para rotas
 import { Text, View } from "react-native";
