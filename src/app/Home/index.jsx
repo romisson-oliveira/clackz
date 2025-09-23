@@ -53,6 +53,8 @@ export default function Home() {
             placeholder="Nome..."
             style={styles.inputText}
             onChangeText={setName} // Use setNAme diretamente
+            // Aciona a busca quando o usuário pressiona Enter no teclado
+            onSubmitEditing={handleNavigation}
           />
         </View>
         <TouchableOpacity
