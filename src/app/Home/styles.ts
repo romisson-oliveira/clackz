@@ -1,13 +1,15 @@
 // src/app/Home/styles/styles.ts
+import { COLORS } from "@/constants/colors";
 import { Platform, StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+
     // Garante que o gradiente preenche todo o espaço
   },
   areaLogo: {
-    justifyContent: "flex-start",
+    justifyContent: "center",
     alignItems: "center",
     width: 200,
     height: 100,
@@ -15,12 +17,12 @@ export const styles = StyleSheet.create({
   },
   text: {
     fontSize: 24,
-    color: "#fff",
+    color: COLORS.white,
     fontWeight: "bold",
   },
   title: {
     fontSize: 36,
-    color: "#B5B0AA",
+    color: COLORS.textNewColor,
     fontWeight: "bold",
   },
   inputArea: {
@@ -31,13 +33,13 @@ export const styles = StyleSheet.create({
   inputText: {
     borderRadius: 8,
     height: 50,
-    backgroundColor: "#B5B0AA",
+    backgroundColor: COLORS.textNewColor,
     fontSize: 20,
     padding: 12,
   },
   textInsideInput: {
     fontSize: 20,
-    color: "#B3B3B2",
+    color: COLORS.inputText,
     fontWeight: "semibold",
   },
   botao: {
@@ -47,7 +49,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#524C46", // Estilos de sombra para iOS
     ...Platform.select({
       ios: {
-        shadowColor: "#000",
+        shadowColor: COLORS.black,
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.2,
         shadowRadius: 4,

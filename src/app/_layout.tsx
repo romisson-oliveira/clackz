@@ -2,6 +2,7 @@
 
 import { DefaultTheme, ThemeProvider } from "@react-navigation/native";
 import { Stack } from "expo-router";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 // Crie seu tema personalizado
 const MyTheme = {
@@ -14,8 +15,10 @@ const MyTheme = {
 
 export default function Layout() {
   return (
-    <ThemeProvider value={MyTheme}>
-      <Stack screenOptions={{ animation: "none" }} />
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider value={MyTheme}>
+        <Stack screenOptions={{ animation: "none" }} />
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }

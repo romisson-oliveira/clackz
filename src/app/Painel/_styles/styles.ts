@@ -1,3 +1,4 @@
+import { COLORS } from "@/constants/colors";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -5,10 +6,16 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    width: "100%",
+    borderWidth: 0,
+    borderColor: "transparent",
   },
   title: {
-    fontSize: 36,
-    color: "#B5B0AA",
+    fontSize: 24,
+    color: COLORS.textColor,
     fontWeight: "bold",
+    alignSelf: "flex-start",
+    marginTop: 32,
+    marginLeft: 28,
   },
 });

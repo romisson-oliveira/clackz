@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
   backgroundGradient: {
     flex: 1,
     alignItems: "center",
-    borderWidth: 2,
-    borderStyle: "solid",
+    borderWidth: 0,
+    borderColor: "transparent",
+    padding: 8,
   },
 });
