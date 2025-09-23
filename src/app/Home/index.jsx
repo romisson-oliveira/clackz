@@ -1,11 +1,18 @@
 // src/app/Home/index.tsx
 import Background from "@/components/Background/index";
+import { useRouter } from "expo-router"; // Importando estado para rotas
 import { useState } from "react";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { styles } from "../Home/styles/styles";
 
 export default function Home() {
   const [name, setName] = useState("Pessoa");
+
+  const router = useRouter(); // Inicializando router
+
+  function handleClick() {
+    router.push("../Painel/");
+  }
   return (
     <View style={styles.container}>
       <Background>
@@ -26,9 +33,7 @@ export default function Home() {
         <TouchableOpacity
           style={styles.botao}
           activeOpacity={0.9}
-          onPress={() => {
-            console.log(name);
-          }}
+          onPress={handleClick}
         >
           <Text
             style={{
