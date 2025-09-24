@@ -18,4 +18,19 @@ export const styles = StyleSheet.create({
     marginTop: 32,
     marginLeft: 28,
   },
+  grid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+  },
+  cell: {
+    width: "50%",
+    height: 200,
+    padding: 4,
+  },
+  image: {
+    flex: 1,
+    width: "auto",
+    resizeMode: "cover",
+    borderRadius: 10,
+  },
 });
